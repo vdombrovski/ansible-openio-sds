@@ -3,5 +3,7 @@
   become : true
   gather_facts: true
   any_errors_fatal: true
+  vars:
+      openio_bootstrap: true
   roles:
     - role: ansible-role-openio-sds
